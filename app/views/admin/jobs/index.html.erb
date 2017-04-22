@@ -17,11 +17,7 @@
           <td>#</td>
           <td><%= job.title %></td>
           <td><%= simple_format(job.description) %></td>
-          <% if job.hidden %>
-            <td>hidden</td>
-          <% else %>
-            <td>open</td>
-          <% end %>
+          <td><%= render_job_status %></td>
           <td>
               <%= link_to("Edit", edit_admin_job_path(job), class: "btn btn-sm btn-default")%>
               <%= link_to("Delete", admin_job_path(job),    class: "btn btn-sm btn-default",
