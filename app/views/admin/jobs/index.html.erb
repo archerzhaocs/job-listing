@@ -17,7 +17,7 @@
           <td>#</td>
           <td><%= link_to(job.title, admin_job_path(job)) %></td>
           <td><%= job.description %></td>
-          <% if job.is_hidden? %>
+          <% if job.hidden %>
             <td>hidden</td>
           <% else %>
             <td>open</td>
