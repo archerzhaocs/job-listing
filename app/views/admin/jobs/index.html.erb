@@ -8,6 +8,7 @@
         <td>#</td>
         <td>Title</td>
         <td>Description</td>
+        <td>Hidden</td>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,11 @@
           <td>#</td>
           <td><%= link_to(job.title, admin_job_path(job)) %></td>
           <td><%= job.description %></td>
+          <% if job.is_hidden? %>
+            <td>hidden</td>
+          <% else %>
+            <td>open</td>
+          <% end %>
           <td>
               <%= link_to("Edit", edit_admin_job_path(job), class: "btn btn-sm btn-default")%>
               <%= link_to("Delete", admin_job_path(job),    class: "btn btn-sm btn-default",
