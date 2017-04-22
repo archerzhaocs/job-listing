@@ -1,5 +1,6 @@
 class Admin::JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :require_is_admin
 
   def index
     @jobs = Job.all
@@ -48,5 +49,11 @@ class Admin::JobsController < ApplicationController
 
   def job_params
     params.require(:job).permit(:title, :description)
+  end
+
+  def require_is_admin
+    if current_user.email != 'admin@fullstack.com'
+      redirect_to root_path, alert:"You are not administrator!"
+    end
   end
 end
