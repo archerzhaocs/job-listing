@@ -33,7 +33,7 @@ class Admin::JobsController < ApplicationController
     @job = Job.find(params[:id])
 
     if @job.update(job_params)
-      redirect_to admin_jobs_path, notice: "Job edit success!"
+      redirect_to admin_jobs_path, success: "Job edit success!"
     else
       render :new
     end
