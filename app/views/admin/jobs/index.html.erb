@@ -8,16 +8,17 @@
         <td>#</td>
         <td>Title</td>
         <td>Description</td>
-        <td>Hidden</td>
       </tr>
     </thead>
     <tbody>
       <% @jobs.each do |job| %>
         <tr>
           <td>#</td>
-          <td><%= job.title %></td>
+          <td>
+            <%= render_job_status(job) %>
+            <%= job.title %>
+          </td>
           <td><%= simple_format(job.description) %></td>
-          <td><%= render_job_status(job) %></td>
           <td>
               <%= link_to("Edit", edit_admin_job_path(job), class: "btn btn-sm btn-default")%>
               <%= link_to("Delete", admin_job_path(job),    class: "btn btn-sm btn-default",
