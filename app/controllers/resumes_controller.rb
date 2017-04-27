@@ -20,6 +20,10 @@ class ResumesController < ApplicationController
   end
 
   def destroy
+    @job = Job.find(params[:job_id])
+    @resume = Resume.find(params[:id])
+    @resume.destroy
+    redirect_to job_path(@job), alert:"简历删除成功!"
   end
 
   private
