@@ -27,6 +27,8 @@ class JobsController < ApplicationController
       flash[:warning] = "This Job already archived"
       redirect_to root_path
     end
+
+    @resumes = @job.resumes
   end
 
   def create
