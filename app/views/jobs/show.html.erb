@@ -8,14 +8,14 @@
   <table class="table">
     <thead>
       <tr>
-        <th>名字</th>
+        <th>内容</th>
         <th>下载链接</th>
       </tr>
     </thead>
     <tbody>
       <% @resumes.each do |resume| %>
         <tr>
-          <td><%= resume.name %></td>
+          <td><%= resume.content %></td>
           <td><%= link_to("下载简历", resume.attachment_url)%> </td>
           <td><%= button_to "Delete", job_resume_path(resume.job, resume), method: :delete, class: "btn btn-danger", confirm: "Are you sure to delete?" %></td>
         </tr>
