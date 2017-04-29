@@ -16,4 +16,7 @@ class Job < ApplicationRecord
     self.hidden = true
     self.save
   end
+
+  scope :published, -> {where(hidden: false)}
+  scope :recent, -> { order('created_at DESC')}
 end
