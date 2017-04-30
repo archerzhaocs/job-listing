@@ -198,3 +198,11 @@
     background-color: #00695C; //鼠标放置在btn上的背景颜色
     border-color: #00695C; //鼠标放置在btn上的边框颜色
   }
+
+ .btn-lg, .btn-group-lg > .btn {
+     padding: 8px 16px;//通过padding来决定btn的大小
+     font-size: 20px;//btn文字大小
+     letter-spacing: 3px;//调整文字间距
+     border-radius: 3px;//btn圆角
+     width: 200px;//这里用指定宽度把btn拉得更长
+ }
