@@ -165,3 +165,36 @@
    margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏r；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;//圆角为0
  }
+
+  .btn-danger {
+    color: #fff; //字体颜色
+    background-color: #ef5350; //背景颜色
+    border-color: #ef5350; //边框颜色
+  }
+
+  .btn-danger:hover {
+    background-color: #b71c1c; //鼠标放置在btn上的背景颜色
+    border-color: #b71c1c; //鼠标放置在btn上的边框颜色
+  }
+
+  .btn-info {
+    color: #fff; //字体颜色
+    background-color: #7986CB; //背景颜色
+    border-color: #7986CB; //边框颜色
+  }
+
+  .btn-info:hover {
+    background-color: #283593; //鼠标放置在btn上的背景颜色
+    border-color: #283593; //鼠标放置在btn上的边框颜色
+  }
+
+  .btn-success {
+    color: #fff; //字体颜色
+    background-color: #4DB6AC; //背景颜色
+    border-color: #4DB6AC; //边框颜色
+  }
+
+  .btn-success:hover {
+    background-color: #00695C; //鼠标放置在btn上的背景颜色
+    border-color: #00695C; //鼠标放置在btn上的边框颜色
+  }
