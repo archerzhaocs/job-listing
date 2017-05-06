@@ -21,7 +21,7 @@
  @import "font-awesome";
 
   .jumbotron {
-    background-image:url('http://7xldwc.com1.z0.glb.clouddn.com/fullstack/job-bg-surfer.jpg');
+    background-image:url('/assets/animals.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 110px;
@@ -29,7 +29,7 @@
 
   .container-fluid .jumbotron{
     padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-    margin: -20px 0 20px 0; //top margin为-20是为了填补navbar下面的20px空白，bottom的20px是为了撑开下面的内容。
+    margin: -20px 0 0 0; //top margin为-20是为了填补navbar下面的20px空白，bottom的20px是为了撑开下面的内容。
     border-radius: 0;//圆角为0
   }
 
@@ -61,6 +61,13 @@
      border-bottom-left-radius: 3px;//左下角圆边
   }
 
+ .slogan {
+   margin-top: 10px;
+   margin-bottom: 50px;
+   text-align: center;
+   color: white;
+   top: 12px;
+ }
 
  .lead {
    margin-bottom: 60px;
@@ -98,7 +105,7 @@
  .navbar-default {
    background-color: #212121; //背景颜色
    border-color: #212121; //边框色
-   //margin-bottom: 0;
+   margin-bottom: 0px;
  }
 
  @media (min-width: 768px) {
@@ -292,5 +299,88 @@
 
 .col-centered {
   float: none;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+.panel {
+
+  margin-top: 20px;
+}
+// 热门职位信息panel
+
+#pets-care {
+
+.panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+}
+
+#myCarousel {
+  margin-top: 0px;
+}
+
+#myCarousel2 {
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 30px 0 70px;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+  .img-center {
+    margin: 40px auto 0;
+  }
 }
