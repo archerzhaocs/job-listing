@@ -5,9 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :resumes
-  
+
   def admin?
-   is_admin
+   #is_admin
+   #@user = User.find(params[:id])
+   email == 'admin@pets-care.com'
   end
 
 end
