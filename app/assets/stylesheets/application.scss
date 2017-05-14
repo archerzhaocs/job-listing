@@ -38,6 +38,14 @@
         text-align: center;
         color: white;
     }
+
+    .btn-lg, .btn-group-lg > .btn {
+        padding: 8px 16px;//通过padding来决定btn的大小
+        font-size: 20px;//btn文字大小
+        letter-spacing: 3px;//调整文字间距
+        border-radius: 3px;//btn圆角
+        width: 300px;//这里用指定宽度把btn拉得更长
+    }
 }
 
 // Nav-bar
@@ -132,13 +140,7 @@
     border-color: #00695C; //鼠标放置在btn上的边框颜色
   }
 
- .btn-lg, .btn-group-lg > .btn {
-     padding: 8px 16px;//通过padding来决定btn的大小
-     font-size: 20px;//btn文字大小
-     letter-spacing: 3px;//调整文字间距
-     border-radius: 3px;//btn圆角
-     width: 300px;//这里用指定宽度把btn拉得更长
- }
+
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
  /****** LOGIN MODAL ******/
@@ -325,5 +327,20 @@
 
   .img-center {
     margin: 40px auto 0;
+  }
+}
+
+//---------Footer---------
+
+.footer {
+  //position: absolute;
+  //bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #233140;
+  padding: 10px;
+
+  p {
+    color: white;
   }
 }
